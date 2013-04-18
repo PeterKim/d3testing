@@ -1,5 +1,8 @@
 D3testing::Application.routes.draw do
-  root to: 'pages#home'
+  root to: 'pages#parallel_set'
+  
+  match '/home', to: 'pages#home'
+  match '/parallel_set', to: 'pages#parallel_set'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
