@@ -82,12 +82,17 @@ pre, code { font-family: "Menlo", monospace; }
 <div class="options">
   <span class="source">Data: <a href="parallel.csv">Steven Hor</a></span>
   <span class="curves">
-    <label for="curved"><input type="checkbox" id="curved" onchange="curves.call(this)"> Curves?</label>
-    <label for="icicle" style="font-style: italic"><input type="checkbox" id="icicle"> Show icicle plot!</label>
+    <label for="curved"><input type="checkbox" id="curved" onchange="curves.call(this)"><i>curves</i></label>
+    <label for="icicle"><input type="checkbox" id="icicle"><i>icicle</i></label>
   </span>
 </div>
 
 <h2>Explanation</h2>
+
+<p>The data shown in the example represents AS devices and non-AS devices (GFE and BB) that are currently in the system. The breakdown of these devices can be classified with Status of enrollment, Platform of the OS, and the last contacted time of the devices by week, month, and older.<p>
+
+<p>This chart is adjustable by end users: If you would like, left-click and drag the category (Connection, Status, Platform, Last Contact) to top or bottom. Likewise, you can perform the same for left-right on the type of results (AS vs Non-AS).<p>
+
 
 <script>
 var chart = d3.parsets()
